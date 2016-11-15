@@ -1,0 +1,25 @@
+{
+  "name": "brick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && browserify src/index.js -o dist/brick.js",
+    "build:examples": "mkdir -p dist && browserify examples/todo-mvp.js -o dist/todo-mvp.bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "eslint": "^3.10.1",
+    "eslint-config-airbnb-base": "^10.0.1",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
