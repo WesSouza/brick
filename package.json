@@ -1,7 +1,7 @@
 {
   "name": "brick",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "DOM Nodes, as LEGO.",
   "main": "src/index.js",
   "directories": {
     "example": "examples"
@@ -9,11 +9,13 @@
   "scripts": {
     "build": "mkdir -p dist && browserify src/index.js -o dist/brick.js",
     "build:examples": "mkdir -p dist && browserify examples/todo-mvp.js -o dist/todo-mvp.bundle.js",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Wesley de Souza <me@wesley.so> (http://wesley.so/)",
+  "license": "MIT",
+  "repository": "WesleydeSouza/brick",
   "dependencies": {
   },
   "devDependencies": {
